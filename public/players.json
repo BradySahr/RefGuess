@@ -1,0 +1,234 @@
+[
+  {
+    "name": "Cal Raleigh",
+    "team": "Seattle Mariners",
+    "year": 2025,
+    "avg": 0.247,
+    "hr": 60,
+    "rbi": 125
+  },
+  {
+    "name": "Kyle Schwarber",
+    "team": "Philadelphia Phillies",
+    "year": 2025,
+    "avg": 0.24,
+    "hr": 56,
+    "rbi": 132
+  },
+  {
+    "name": "Shohei Ohtani",
+    "team": "Los Angeles Dodgers",
+    "year": 2025,
+    "avg": 0.282,
+    "hr": 55,
+    "rbi": 102
+  },
+  {
+    "name": "Aaron Judge",
+    "team": "New York Yankees",
+    "year": 2025,
+    "avg": 0.331,
+    "hr": 53,
+    "rbi": 114
+  },
+  {
+    "name": "Eugenio Suárez",
+    "team": "Unknown",
+    "year": 2025,
+    "avg": 0.228,
+    "hr": 49,
+    "rbi": 118
+  },
+  {
+    "name": "Junior Caminero",
+    "team": "Tampa Bay Rays",
+    "year": 2025,
+    "avg": 0.264,
+    "hr": 45,
+    "rbi": 110
+  },
+  {
+    "name": "Juan Soto",
+    "team": "New York Mets",
+    "year": 2025,
+    "avg": 0.263,
+    "hr": 43,
+    "rbi": 105
+  },
+  {
+    "name": "Pete Alonso",
+    "team": "New York Mets",
+    "year": 2025,
+    "avg": 0.272,
+    "hr": 38,
+    "rbi": 126
+  },
+  {
+    "name": "Jo Adell",
+    "team": "Los Angeles Angels",
+    "year": 2025,
+    "avg": 0.236,
+    "hr": 37,
+    "rbi": 98
+  },
+  {
+    "name": "Riley Greene",
+    "team": "Detroit Tigers",
+    "year": 2025,
+    "avg": 0.258,
+    "hr": 36,
+    "rbi": 111
+  },
+  {
+    "name": "Nick Kurtz",
+    "team": "Athletics",
+    "year": 2025,
+    "avg": 0.29,
+    "hr": 36,
+    "rbi": 86
+  },
+  {
+    "name": "Taylor Ward",
+    "team": "Los Angeles Angels",
+    "year": 2025,
+    "avg": 0.228,
+    "hr": 36,
+    "rbi": 103
+  },
+  {
+    "name": "Byron Buxton",
+    "team": "Minnesota Twins",
+    "year": 2025,
+    "avg": 0.264,
+    "hr": 35,
+    "rbi": 83
+  },
+  {
+    "name": "Rafael Devers",
+    "team": "Unknown",
+    "year": 2025,
+    "avg": 0.252,
+    "hr": 35,
+    "rbi": 109
+  },
+  {
+    "name": "Michael Busch",
+    "team": "Chicago Cubs",
+    "year": 2025,
+    "avg": 0.261,
+    "hr": 34,
+    "rbi": 90
+  },
+  {
+    "name": "Trent Grisham",
+    "team": "New York Yankees",
+    "year": 2025,
+    "avg": 0.235,
+    "hr": 34,
+    "rbi": 74
+  },
+  {
+    "name": "Vinnie Pasquantino",
+    "team": "Kansas City Royals",
+    "year": 2025,
+    "avg": 0.264,
+    "hr": 32,
+    "rbi": 113
+  },
+  {
+    "name": "Julio Rodríguez",
+    "team": "Seattle Mariners",
+    "year": 2025,
+    "avg": 0.267,
+    "hr": 32,
+    "rbi": 95
+  },
+  {
+    "name": "George Springer",
+    "team": "Toronto Blue Jays",
+    "year": 2025,
+    "avg": 0.309,
+    "hr": 32,
+    "rbi": 84
+  },
+  {
+    "name": "Seiya Suzuki",
+    "team": "Chicago Cubs",
+    "year": 2025,
+    "avg": 0.245,
+    "hr": 32,
+    "rbi": 103
+  },
+  {
+    "name": "Corbin Carroll",
+    "team": "Arizona Diamondbacks",
+    "year": 2025,
+    "avg": 0.259,
+    "hr": 31,
+    "rbi": 84
+  },
+  {
+    "name": "Jazz Chisholm Jr.",
+    "team": "New York Yankees",
+    "year": 2025,
+    "avg": 0.242,
+    "hr": 31,
+    "rbi": 80
+  },
+  {
+    "name": "Pete Crow-Armstrong",
+    "team": "Chicago Cubs",
+    "year": 2025,
+    "avg": 0.247,
+    "hr": 31,
+    "rbi": 95
+  },
+  {
+    "name": "Hunter Goodman",
+    "team": "Colorado Rockies",
+    "year": 2025,
+    "avg": 0.278,
+    "hr": 31,
+    "rbi": 91
+  },
+  {
+    "name": "Shea Langeliers",
+    "team": "Athletics",
+    "year": 2025,
+    "avg": 0.277,
+    "hr": 31,
+    "rbi": 72
+  },
+  {
+    "name": "Francisco Lindor",
+    "team": "New York Mets",
+    "year": 2025,
+    "avg": 0.267,
+    "hr": 31,
+    "rbi": 86
+  },
+  {
+    "name": "Brandon Lowe",
+    "team": "Tampa Bay Rays",
+    "year": 2025,
+    "avg": 0.256,
+    "hr": 31,
+    "rbi": 83
+  },
+  {
+    "name": "Spencer Torkelson",
+    "team": "Detroit Tigers",
+    "year": 2025,
+    "avg": 0.24,
+    "hr": 31,
+    "rbi": 78
+  },
+  {
+    "name": "James Wood",
+    "team": "Washington Nationals",
+    "year": 2025,
+    "avg": 0.256,
+    "hr": 31,
+    "rbi": 94
+  }
+]

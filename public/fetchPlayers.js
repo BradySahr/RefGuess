@@ -10,7 +10,7 @@
 // players.json, in the same shape game.js already expects.
 // ---------------------------------------------------------------
 
-const SEASON = 2025;       // change this to pull a different year
+const SEASON = 2000;       // change this to pull a different year
 const HOW_MANY = 25;       // how many players to include
 
 async function main() {
