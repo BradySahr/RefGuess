@@ -10,7 +10,7 @@
 // players.json, in the same shape game.js already expects.
 // ---------------------------------------------------------------
 
-const SEASON = 2024;       // change this to pull a different year
+const SEASON = 2025;       // change this to pull a different year
 const HOW_MANY = 25;       // how many players to include
 
 async function main() {
@@ -53,9 +53,15 @@ async function main() {
     console.log(`Fetched ${leader.person.fullName}`);
   }
 
+  // Write players.json into the SAME folder as this script file,
+  // no matter what folder you were in when you ran "node fetch-players.js".
   const fs = await import("fs/promises");
-  await fs.writeFile("players.json", JSON.stringify(players, null, 2));
-  console.log(`\nSaved ${players.length} players to players.json`);
+  const path = await import("path");
+  const { fileURLToPath } = await import("url");
+  const scriptDir = path.dirname(fileURLToPath(import.meta.url));
+  const outputPath = path.join(scriptDir, "players.json");
+
+  await fs.writeFile(outputPath, JSON.stringify(players, null, 2));
 }
 
 main().catch((err) => {
