@@ -112,8 +112,9 @@ function main() {
       ? Math.round(((hits + walks + hbp) / obpDenominator) * 1000) / 1000
       : 0;
     const slg = atBats > 0 ? Math.round((totalBases / atBats) * 1000) / 1000 : 0;
-    const ops = Math.round((obp + slg) * 1000) / 1000;
-
+    const ops = obpDenominator > 0
+      ? Math.round(((hits + walks + hbp) / obpDenominator) * 1000) / 1000
+      : 0 + atBats > 0 ? Math.round((totalBases / atBats) * 1000) / 1000 : 0;
     if (!seasonsByID[id]) seasonsByID[id] = [];
     seasonsByID[id].push({
       year,
