@@ -108,13 +108,16 @@ function main() {
     const totalBases = singles + (2 * doubles) + (3 * triples) + (4 * homeRuns);
 
     const obpDenominator = atBats + walks + hbp + sacFlies;
-    const obp = obpDenominator > 0
-      ? Math.round(((hits + walks + hbp) / obpDenominator) * 1000) / 1000
-      : 0;
-    const slg = atBats > 0 ? Math.round((totalBases / atBats) * 1000) / 1000 : 0;
-    const ops = obpDenominator > 0
-      ? Math.round(((hits + walks + hbp) / obpDenominator) * 1000) / 1000
-      : 0 + atBats > 0 ? Math.round((totalBases / atBats) * 1000) / 1000 : 0;
+    const rawObp = obpDenominator > 0 ? (hits + walks + hbp) / obpDenominator : 0;
+    const rawSlg = atBats > 0 ? totalBases / atBats : 0;
+
+    // Round OBP and SLG for display, but calculate OPS from the raw,
+    // unrounded values — rounding each one separately first and then
+    // adding them would stack two small rounding errors together.
+    const obp = Math.round(rawObp * 1000) / 1000;
+    const slg = Math.round(rawSlg * 1000) / 1000;
+    const ops = Math.round((rawObp + rawSlg) * 1000) / 1000;
+
     if (!seasonsByID[id]) seasonsByID[id] = [];
     seasonsByID[id].push({
       year,

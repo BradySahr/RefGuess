@@ -5,7 +5,7 @@ body {
   color: #f4f1ea;
   display: flex;
   justify-content: center;
-  padding: 40px 16px;
+  padding: 40px 20px;
 }
 
 .card {
@@ -14,7 +14,7 @@ body {
   border-radius: 12px;
   padding: 32px;
   width: 100%;
-  max-width: 720px;
+  max-width: 1100px;
   box-shadow: 0 8px 24px rgba(0,0,0,0.3);
 }
 
@@ -84,16 +84,19 @@ tbody tr:nth-child(even) {
 
 input[type="text"] {
   width: 100%;
+  max-width: 340px;
   box-sizing: border-box;
   padding: 10px 12px;
   margin-top: 20px;
   border: 1px solid #ccc;
   border-radius: 6px;
   font-size: 15px;
+  display: block;
 }
 
 button {
   width: 100%;
+  max-width: 340px;
   margin-top: 12px;
   padding: 10px;
   border: none;
