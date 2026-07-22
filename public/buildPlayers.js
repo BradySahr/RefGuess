@@ -26,8 +26,12 @@ const fs = require("fs");
 const path = require("path");
 
 const GAME_MODE = "CURRENT";     // "CURRENT" = only players active in 2026, anything else = full career mode
-const MIN_CAREER_AT_BATS = 1500; // ignore players with too small a career sample (career mode only)
-const MAX_PLAYERS = 300;         // cap how many go into players.json
+const MIN_CAREER_AT_BATS = 3000; // ignore players with too small a career sample (career mode only)
+
+// No cap in CURRENT mode — include every qualifying active player.
+// Career mode still caps at 750 so players.json doesn't get huge.
+// (Array.prototype.slice happily treats Infinity as "to the end.")
+const MAX_PLAYERS = GAME_MODE === "CURRENT" ? Infinity : 750;
 
 // Folder this script lives in, so it works no matter where you run it from.
 const dir = __dirname;
@@ -172,7 +176,7 @@ function main() {
       // Only keep players whose most recent season matches the most
       // recent season found anywhere in the data — i.e. people who
       // played in the latest year your Lahman download covers.
-      if (seasons[seasons.length - 1].year !== mostRecentYear) continue;
+      if (seasons[seasons.length - 1].year !== mostRecentYear || careerAB < 100) continue;
     } else {
       if (careerAB < MIN_CAREER_AT_BATS) continue; // skip short careers
     }
