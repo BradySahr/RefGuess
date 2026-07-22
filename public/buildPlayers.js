@@ -25,8 +25,8 @@
 const fs = require("fs");
 const path = require("path");
 
-const MIN_AT_BATS = 400;   // ignore partial/tiny seasons
-const MAX_PLAYERS = 300;   // cap how many go into players.json
+const MIN_CAREER_AT_BATS = 1500; // ignore players with too small a career sample
+const MAX_PLAYERS = 300;         // cap how many go into players.json
 
 // Folder this script lives in, so it works no matter where you run it from.
 const dir = __dirname;
@@ -81,31 +81,54 @@ function main() {
     teamNameByYearAndID[`${team.yearID}_${team.teamID}`] = team.name;
   }
 
-  // Build one entry per qualifying batting season
-  const players = [];
+  // ---------- Group every season row by player ----------
+  // Each player ends up with a list of season objects (one per year
+  // they played), instead of one summed career line.
+  const seasonsByID = {};
   for (const row of batting) {
+    const id = row.playerID;
+    const year = parseInt(row.yearID, 10);
     const atBats = parseInt(row.AB, 10) || 0;
-    if (atBats < MIN_AT_BATS) continue; // skip small sample sizes
-
     const hits = parseInt(row.H, 10) || 0;
-    const homeRuns = parseInt(row.HR, 10) || 0;
-    const rbi = parseInt(row.RBI, 10) || 0;
-    const name = nameByID[row.playerID];
-    const team = teamNameByYearAndID[`${row.yearID}_${row.teamID}`];
 
-    if (!name || !team) continue; // skip if we couldn't match either
+    const team = teamNameByYearAndID[`${year}_${row.teamID}`];
+    if (!team) continue; // skip rows we can't match to a team name
 
-    players.push({
-      name,
+    if (!seasonsByID[id]) seasonsByID[id] = [];
+    seasonsByID[id].push({
+      year,
       team,
-      year: parseInt(row.yearID, 10),
-      avg: Math.round((hits / atBats) * 1000) / 1000, // round to 3 decimals
-      hr: homeRuns,
-      rbi,
+      g: parseInt(row.G, 10) || 0,
+      ab: atBats,
+      r: parseInt(row.R, 10) || 0,
+      h: hits,
+      doubles: parseInt(row["2B"], 10) || 0,
+      triples: parseInt(row["3B"], 10) || 0,
+      hr: parseInt(row.HR, 10) || 0,
+      rbi: parseInt(row.RBI, 10) || 0,
+      sb: parseInt(row.SB, 10) || 0,
+      bb: parseInt(row.BB, 10) || 0,
+      so: parseInt(row.SO, 10) || 0,
+      avg: atBats > 0 ? Math.round((hits / atBats) * 1000) / 1000 : 0,
     });
   }
 
-  console.log(`Found ${players.length} qualifying player-seasons.`);
+  // ---------- Turn each player's seasons into a player entry ----------
+  const players = [];
+  for (const id in seasonsByID) {
+    const seasons = seasonsByID[id];
+    const careerAB = seasons.reduce((sum, s) => sum + s.ab, 0);
+    if (careerAB < MIN_CAREER_AT_BATS) continue; // skip short careers
+
+    const name = nameByID[id];
+    if (!name) continue;
+
+    seasons.sort((a, b) => a.year - b.year); // oldest season first
+
+    players.push({ name, seasons });
+  }
+
+  console.log(`Found ${players.length} qualifying careers.`);
 
   // Shuffle and trim down to MAX_PLAYERS so players.json isn't huge
   for (let i = players.length - 1; i > 0; i--) {

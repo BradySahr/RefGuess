@@ -18,12 +18,38 @@ function newRound() {
 
   // Build the stat lines as HTML (name is left out on purpose!)
   const statsDiv = document.getElementById("stats");
+  // Build one table row per season this player played
+  const rows = currentPlayer.seasons.map((s) => `
+    <tr>
+      <td>${s.year}</td>
+      <td>${s.team}</td>
+      <td>${s.g}</td>
+      <td>${s.ab}</td>
+      <td>${s.r}</td>
+      <td>${s.h}</td>
+      <td>${s.doubles}</td>
+      <td>${s.triples}</td>
+      <td>${s.hr}</td>
+      <td>${s.rbi}</td>
+      <td>${s.sb}</td>
+      <td>${s.bb}</td>
+      <td>${s.so}</td>
+      <td>${s.avg.toFixed(3)}</td>
+    </tr>
+  `).join("");
+
   statsDiv.innerHTML = `
-    <div class="stat-line"><span class="stat-label">Team</span><span class="stat-value">${currentPlayer.team}</span></div>
-    <div class="stat-line"><span class="stat-label">Season</span><span class="stat-value">${currentPlayer.year}</span></div>
-    <div class="stat-line"><span class="stat-label">AVG</span><span class="stat-value">${currentPlayer.avg}</span></div>
-    <div class="stat-line"><span class="stat-label">HR</span><span class="stat-value">${currentPlayer.hr}</span></div>
-    <div class="stat-line"><span class="stat-label">RBI</span><span class="stat-value">${currentPlayer.rbi}</span></div>
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr>
+            <th>Year</th><th>Team</th><th>G</th><th>AB</th><th>R</th><th>H</th>
+            <th>2B</th><th>3B</th><th>HR</th><th>RBI</th><th>SB</th><th>BB</th><th>SO</th><th>AVG</th>
+          </tr>
+        </thead>
+        <tbody>${rows}</tbody>
+      </table>
+    </div>
   `;
 
   // Reset the input box and result message for the new round
