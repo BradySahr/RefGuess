@@ -35,6 +35,9 @@ function newRound() {
       <td>${s.bb}</td>
       <td>${s.so}</td>
       <td>${s.avg.toFixed(3)}</td>
+      <td>${s.obp.toFixed(3)}</td>
+      <td>${s.slg.toFixed(3)}</td>
+      <td>${s.ops.toFixed(3)}</td>
     </tr>
   `).join("");
 
@@ -44,7 +47,8 @@ function newRound() {
         <thead>
           <tr>
             <th>Year</th><th>Team</th><th>G</th><th>AB</th><th>R</th><th>H</th>
-            <th>2B</th><th>3B</th><th>HR</th><th>RBI</th><th>SB</th><th>BB</th><th>SO</th><th>AVG</th>
+            <th>2B</th><th>3B</th><th>HR</th><th>RBI</th><th>SB</th><th>BB</th><th>SO</th>
+            <th>AVG</th><th>OBP</th><th>SLG</th><th>OPS</th>
           </tr>
         </thead>
         <tbody>${rows}</tbody>

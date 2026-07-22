@@ -94,6 +94,26 @@ function main() {
     const team = teamNameByYearAndID[`${year}_${row.teamID}`];
     if (!team) continue; // skip rows we can't match to a team name
 
+    // These need to be computed as plain variables first — inside an
+    // object literal you can't reference a sibling property (like
+    // "obp") from another property (like "ops") while it's still
+    // being built, so we work them out here instead.
+    const walks = parseInt(row.BB, 10) || 0;
+    const hbp = parseInt(row.HBP, 10) || 0;
+    const sacFlies = parseInt(row.SF, 10) || 0;
+    const doubles = parseInt(row["2B"], 10) || 0;
+    const triples = parseInt(row["3B"], 10) || 0;
+    const homeRuns = parseInt(row.HR, 10) || 0;
+    const singles = hits - doubles - triples - homeRuns;
+    const totalBases = singles + (2 * doubles) + (3 * triples) + (4 * homeRuns);
+
+    const obpDenominator = atBats + walks + hbp + sacFlies;
+    const obp = obpDenominator > 0
+      ? Math.round(((hits + walks + hbp) / obpDenominator) * 1000) / 1000
+      : 0;
+    const slg = atBats > 0 ? Math.round((totalBases / atBats) * 1000) / 1000 : 0;
+    const ops = Math.round((obp + slg) * 1000) / 1000;
+
     if (!seasonsByID[id]) seasonsByID[id] = [];
     seasonsByID[id].push({
       year,
@@ -102,14 +122,17 @@ function main() {
       ab: atBats,
       r: parseInt(row.R, 10) || 0,
       h: hits,
-      doubles: parseInt(row["2B"], 10) || 0,
-      triples: parseInt(row["3B"], 10) || 0,
-      hr: parseInt(row.HR, 10) || 0,
+      doubles,
+      triples,
+      hr: homeRuns,
       rbi: parseInt(row.RBI, 10) || 0,
       sb: parseInt(row.SB, 10) || 0,
-      bb: parseInt(row.BB, 10) || 0,
+      bb: walks,
       so: parseInt(row.SO, 10) || 0,
       avg: atBats > 0 ? Math.round((hits / atBats) * 1000) / 1000 : 0,
+      obp,
+      slg,
+      ops,
     });
   }
 
