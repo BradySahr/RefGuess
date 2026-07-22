@@ -82,6 +82,13 @@ tbody tr:nth-child(even) {
   background: #ebe8de;
 }
 
+.totals-row td {
+  font-weight: 600;
+  border-top: 2px solid #1b2b20;
+  border-bottom: none;
+  background: #e2ddc9;
+}
+
 input[type="text"] {
   width: 100%;
   max-width: 340px;

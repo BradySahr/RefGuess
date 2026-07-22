@@ -41,6 +41,32 @@ function newRound() {
     </tr>
   `).join("");
 
+  // ---------- Career totals row ----------
+  // build-players.js already computed this career line for us (from
+  // raw career totals, not by averaging season rates), so we just
+  // read it off currentPlayer.career instead of recalculating it here.
+  const c = currentPlayer.career;
+  const totalsRow = `
+    <tr class="totals-row">
+      <td colspan="2">Career</td>
+      <td>${c.g}</td>
+      <td>${c.ab}</td>
+      <td>${c.r}</td>
+      <td>${c.h}</td>
+      <td>${c.doubles}</td>
+      <td>${c.triples}</td>
+      <td>${c.hr}</td>
+      <td>${c.rbi}</td>
+      <td>${c.sb}</td>
+      <td>${c.bb}</td>
+      <td>${c.so}</td>
+      <td>${c.avg.toFixed(3)}</td>
+      <td>${c.obp.toFixed(3)}</td>
+      <td>${c.slg.toFixed(3)}</td>
+      <td>${c.ops.toFixed(3)}</td>
+    </tr>
+  `;
+
   statsDiv.innerHTML = `
     <div class="table-scroll">
       <table>
@@ -51,7 +77,7 @@ function newRound() {
             <th>AVG</th><th>OBP</th><th>SLG</th><th>OPS</th>
           </tr>
         </thead>
-        <tbody>${rows}</tbody>
+        <tbody>${rows}${totalsRow}</tbody>
       </table>
     </div>
   `;
