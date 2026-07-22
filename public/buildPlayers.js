@@ -25,7 +25,8 @@
 const fs = require("fs");
 const path = require("path");
 
-const MIN_CAREER_AT_BATS = 1500; // ignore players with too small a career sample
+const GAME_MODE = "CURRENT";     // "CURRENT" = only players active in 2026, anything else = full career mode
+const MIN_CAREER_AT_BATS = 1500; // ignore players with too small a career sample (career mode only)
 const MAX_PLAYERS = 300;         // cap how many go into players.json
 
 // Folder this script lives in, so it works no matter where you run it from.
@@ -80,6 +81,19 @@ function main() {
   for (const team of teams) {
     teamNameByYearAndID[`${team.yearID}_${team.teamID}`] = team.name;
   }
+
+  // The Lahman database is only updated periodically, so instead of
+  // hardcoding a year like 2026 (which might not exist in your copy
+  // of the data yet), figure out the most recent season that's
+  // actually present and treat that as "current."
+  // (Using reduce here instead of Math.max(...array) — Batting.csv
+  // has 100,000+ rows, and spreading that many values as individual
+  // function arguments overflows the call stack.)
+  const mostRecentYear = batting.reduce(
+    (max, row) => Math.max(max, parseInt(row.yearID, 10)),
+    0
+  );
+  console.log(`Most recent season found in Batting.csv: ${mostRecentYear}`);
 
   // ---------- Group every season row by player ----------
   // Each player ends up with a list of season objects (one per year
@@ -151,12 +165,20 @@ function main() {
   for (const id in seasonsByID) {
     const seasons = seasonsByID[id];
     const careerAB = seasons.reduce((sum, s) => sum + s.ab, 0);
-    if (careerAB < MIN_CAREER_AT_BATS) continue; // skip short careers
+
+    seasons.sort((a, b) => a.year - b.year); // oldest season first
+
+    if (GAME_MODE === "CURRENT") {
+      // Only keep players whose most recent season matches the most
+      // recent season found anywhere in the data — i.e. people who
+      // played in the latest year your Lahman download covers.
+      if (seasons[seasons.length - 1].year !== mostRecentYear) continue;
+    } else {
+      if (careerAB < MIN_CAREER_AT_BATS) continue; // skip short careers
+    }
 
     const name = nameByID[id];
     if (!name) continue;
-
-    seasons.sort((a, b) => a.year - b.year); // oldest season first
 
     // Sum up the counting stats across every season for the career row.
     const sum = (key) => seasons.reduce((total, s) => total + s[key], 0);
