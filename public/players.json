@@ -1,0 +1,2402 @@
+[
+  {
+    "name": "Tony Peña",
+    "team": "Pittsburgh Pirates",
+    "year": 1982,
+    "avg": 0.296,
+    "hr": 11,
+    "rbi": 63
+  },
+  {
+    "name": "Steve Sax",
+    "team": "Los Angeles Dodgers",
+    "year": 1982,
+    "avg": 0.282,
+    "hr": 4,
+    "rbi": 47
+  },
+  {
+    "name": "Willie Davis",
+    "team": "Los Angeles Dodgers",
+    "year": 1965,
+    "avg": 0.238,
+    "hr": 10,
+    "rbi": 57
+  },
+  {
+    "name": "Tino Martinez",
+    "team": "New York Yankees",
+    "year": 1998,
+    "avg": 0.281,
+    "hr": 28,
+    "rbi": 123
+  },
+  {
+    "name": "Ed McKean",
+    "team": "Cleveland Spiders",
+    "year": 1894,
+    "avg": 0.357,
+    "hr": 8,
+    "rbi": 128
+  },
+  {
+    "name": "Bobby Avila",
+    "team": "Cleveland Indians",
+    "year": 1951,
+    "avg": 0.304,
+    "hr": 10,
+    "rbi": 58
+  },
+  {
+    "name": "Vada Pinson",
+    "team": "Cleveland Indians",
+    "year": 1971,
+    "avg": 0.263,
+    "hr": 11,
+    "rbi": 35
+  },
+  {
+    "name": "Alex Rios",
+    "team": "Toronto Blue Jays",
+    "year": 2006,
+    "avg": 0.302,
+    "hr": 17,
+    "rbi": 82
+  },
+  {
+    "name": "Mike Piazza",
+    "team": "Los Angeles Dodgers",
+    "year": 1994,
+    "avg": 0.319,
+    "hr": 24,
+    "rbi": 92
+  },
+  {
+    "name": "Ken McMullen",
+    "team": "Washington Senators",
+    "year": 1969,
+    "avg": 0.272,
+    "hr": 19,
+    "rbi": 87
+  },
+  {
+    "name": "Nick Kurtz",
+    "team": "Athletics",
+    "year": 2025,
+    "avg": 0.29,
+    "hr": 36,
+    "rbi": 86
+  },
+  {
+    "name": "Michael Brantley",
+    "team": "Cleveland Indians",
+    "year": 2015,
+    "avg": 0.31,
+    "hr": 15,
+    "rbi": 84
+  },
+  {
+    "name": "Barry McCormick",
+    "team": "St. Louis Browns",
+    "year": 1902,
+    "avg": 0.246,
+    "hr": 3,
+    "rbi": 51
+  },
+  {
+    "name": "Vada Pinson",
+    "team": "Cincinnati Reds",
+    "year": 1962,
+    "avg": 0.292,
+    "hr": 23,
+    "rbi": 100
+  },
+  {
+    "name": "George Van Haltren",
+    "team": "New York Giants",
+    "year": 1900,
+    "avg": 0.315,
+    "hr": 1,
+    "rbi": 51
+  },
+  {
+    "name": "Hubie Brooks",
+    "team": "Montreal Expos",
+    "year": 1985,
+    "avg": 0.269,
+    "hr": 13,
+    "rbi": 100
+  },
+  {
+    "name": "Eddie Collins",
+    "team": "Chicago White Sox",
+    "year": 1915,
+    "avg": 0.332,
+    "hr": 4,
+    "rbi": 77
+  },
+  {
+    "name": "Frankie Crosetti",
+    "team": "New York Yankees",
+    "year": 1945,
+    "avg": 0.238,
+    "hr": 4,
+    "rbi": 48
+  },
+  {
+    "name": "Bobby Grich",
+    "team": "Baltimore Orioles",
+    "year": 1975,
+    "avg": 0.26,
+    "hr": 13,
+    "rbi": 57
+  },
+  {
+    "name": "Ken Henderson",
+    "team": "Chicago White Sox",
+    "year": 1975,
+    "avg": 0.251,
+    "hr": 9,
+    "rbi": 53
+  },
+  {
+    "name": "Ed Abbaticchio",
+    "team": "Boston Beaneaters",
+    "year": 1903,
+    "avg": 0.227,
+    "hr": 1,
+    "rbi": 46
+  },
+  {
+    "name": "Woody English",
+    "team": "Chicago Cubs",
+    "year": 1929,
+    "avg": 0.276,
+    "hr": 1,
+    "rbi": 52
+  },
+  {
+    "name": "Frank LaPorte",
+    "team": "Indianapolis Hoosiers",
+    "year": 1914,
+    "avg": 0.311,
+    "hr": 4,
+    "rbi": 107
+  },
+  {
+    "name": "Kip Selbach",
+    "team": "Cincinnati Reds",
+    "year": 1899,
+    "avg": 0.297,
+    "hr": 3,
+    "rbi": 87
+  },
+  {
+    "name": "John Sneed",
+    "team": "Columbus Solons",
+    "year": 1890,
+    "avg": 0.291,
+    "hr": 2,
+    "rbi": 65
+  },
+  {
+    "name": "Mike Richardt",
+    "team": "Texas Rangers",
+    "year": 1982,
+    "avg": 0.241,
+    "hr": 3,
+    "rbi": 43
+  },
+  {
+    "name": "Wally Schang",
+    "team": "New York Yankees",
+    "year": 1921,
+    "avg": 0.316,
+    "hr": 6,
+    "rbi": 55
+  },
+  {
+    "name": "Dansby Swanson",
+    "team": "Atlanta Braves",
+    "year": 2018,
+    "avg": 0.238,
+    "hr": 14,
+    "rbi": 59
+  },
+  {
+    "name": "Mike Goliat",
+    "team": "Philadelphia Phillies",
+    "year": 1950,
+    "avg": 0.234,
+    "hr": 13,
+    "rbi": 64
+  },
+  {
+    "name": "Don Mincher",
+    "team": "California Angels",
+    "year": 1967,
+    "avg": 0.273,
+    "hr": 25,
+    "rbi": 76
+  },
+  {
+    "name": "Maikel Garcia",
+    "team": "Kansas City Royals",
+    "year": 2023,
+    "avg": 0.272,
+    "hr": 4,
+    "rbi": 50
+  },
+  {
+    "name": "Anthony Rizzo",
+    "team": "Chicago Cubs",
+    "year": 2014,
+    "avg": 0.286,
+    "hr": 32,
+    "rbi": 78
+  },
+  {
+    "name": "Alfredo Griffin",
+    "team": "Toronto Blue Jays",
+    "year": 1982,
+    "avg": 0.241,
+    "hr": 1,
+    "rbi": 48
+  },
+  {
+    "name": "Adam Dunn",
+    "team": "Chicago White Sox",
+    "year": 2012,
+    "avg": 0.204,
+    "hr": 41,
+    "rbi": 96
+  },
+  {
+    "name": "Andrelton Simmons",
+    "team": "Los Angeles Angels of Anaheim",
+    "year": 2016,
+    "avg": 0.281,
+    "hr": 4,
+    "rbi": 44
+  },
+  {
+    "name": "Bob Tillman",
+    "team": "Boston Red Sox",
+    "year": 1964,
+    "avg": 0.278,
+    "hr": 17,
+    "rbi": 61
+  },
+  {
+    "name": "Dean Palmer",
+    "team": "Detroit Tigers",
+    "year": 2000,
+    "avg": 0.256,
+    "hr": 29,
+    "rbi": 102
+  },
+  {
+    "name": "Kolten Wong",
+    "team": "St. Louis Cardinals",
+    "year": 2019,
+    "avg": 0.285,
+    "hr": 11,
+    "rbi": 59
+  },
+  {
+    "name": "Jayson Werth",
+    "team": "Washington Nationals",
+    "year": 2016,
+    "avg": 0.244,
+    "hr": 21,
+    "rbi": 69
+  },
+  {
+    "name": "Wally Moon",
+    "team": "St. Louis Cardinals",
+    "year": 1954,
+    "avg": 0.304,
+    "hr": 12,
+    "rbi": 76
+  },
+  {
+    "name": "Derek Bell",
+    "team": "San Diego Padres",
+    "year": 1994,
+    "avg": 0.311,
+    "hr": 14,
+    "rbi": 54
+  },
+  {
+    "name": "Bill Bradley",
+    "team": "Cleveland Naps",
+    "year": 1905,
+    "avg": 0.268,
+    "hr": 0,
+    "rbi": 51
+  },
+  {
+    "name": "Bibb Falk",
+    "team": "Chicago White Sox",
+    "year": 1925,
+    "avg": 0.301,
+    "hr": 4,
+    "rbi": 99
+  },
+  {
+    "name": "Ralph Kiner",
+    "team": "Pittsburgh Pirates",
+    "year": 1948,
+    "avg": 0.265,
+    "hr": 40,
+    "rbi": 123
+  },
+  {
+    "name": "Ollie O'Mara",
+    "team": "Brooklyn Robins",
+    "year": 1915,
+    "avg": 0.244,
+    "hr": 0,
+    "rbi": 31
+  },
+  {
+    "name": "Ray Lankford",
+    "team": "St. Louis Cardinals",
+    "year": 1994,
+    "avg": 0.267,
+    "hr": 19,
+    "rbi": 57
+  },
+  {
+    "name": "Leroy Stanton",
+    "team": "California Angels",
+    "year": 1972,
+    "avg": 0.251,
+    "hr": 12,
+    "rbi": 39
+  },
+  {
+    "name": "King Kelly",
+    "team": "Boston Beaneaters",
+    "year": 1889,
+    "avg": 0.294,
+    "hr": 9,
+    "rbi": 78
+  },
+  {
+    "name": "Joe Vosmik",
+    "team": "Cleveland Indians",
+    "year": 1932,
+    "avg": 0.312,
+    "hr": 10,
+    "rbi": 97
+  },
+  {
+    "name": "Luke Appling",
+    "team": "Chicago White Sox",
+    "year": 1934,
+    "avg": 0.303,
+    "hr": 2,
+    "rbi": 61
+  },
+  {
+    "name": "Billy Hamilton",
+    "team": "Boston Beaneaters",
+    "year": 1900,
+    "avg": 0.333,
+    "hr": 1,
+    "rbi": 47
+  },
+  {
+    "name": "Riggs Stephenson",
+    "team": "Chicago Cubs",
+    "year": 1928,
+    "avg": 0.324,
+    "hr": 8,
+    "rbi": 90
+  },
+  {
+    "name": "Angel Martínez",
+    "team": "Cleveland Guardians",
+    "year": 2025,
+    "avg": 0.224,
+    "hr": 11,
+    "rbi": 45
+  },
+  {
+    "name": "Ken Keltner",
+    "team": "Cleveland Indians",
+    "year": 1942,
+    "avg": 0.287,
+    "hr": 6,
+    "rbi": 78
+  },
+  {
+    "name": "Carlos Santana",
+    "team": "Cleveland Indians",
+    "year": 2013,
+    "avg": 0.268,
+    "hr": 20,
+    "rbi": 74
+  },
+  {
+    "name": "Ivy Olson",
+    "team": "Brooklyn Robins",
+    "year": 1917,
+    "avg": 0.269,
+    "hr": 2,
+    "rbi": 38
+  },
+  {
+    "name": "Ed McKean",
+    "team": "Cleveland Blues",
+    "year": 1887,
+    "avg": 0.286,
+    "hr": 2,
+    "rbi": 54
+  },
+  {
+    "name": "Rich Becker",
+    "team": "Minnesota Twins",
+    "year": 1997,
+    "avg": 0.264,
+    "hr": 10,
+    "rbi": 45
+  },
+  {
+    "name": "Harry Hooper",
+    "team": "Boston Red Sox",
+    "year": 1918,
+    "avg": 0.289,
+    "hr": 1,
+    "rbi": 44
+  },
+  {
+    "name": "Otis Nixon",
+    "team": "Texas Rangers",
+    "year": 1995,
+    "avg": 0.295,
+    "hr": 0,
+    "rbi": 45
+  },
+  {
+    "name": "Reno Bertoia",
+    "team": "Washington Senators",
+    "year": 1960,
+    "avg": 0.265,
+    "hr": 4,
+    "rbi": 45
+  },
+  {
+    "name": "Jake Cronenworth",
+    "team": "San Diego Padres",
+    "year": 2024,
+    "avg": 0.241,
+    "hr": 17,
+    "rbi": 83
+  },
+  {
+    "name": "Delos Drake",
+    "team": "St. Louis Terriers",
+    "year": 1914,
+    "avg": 0.251,
+    "hr": 3,
+    "rbi": 42
+  },
+  {
+    "name": "Harry Steinfeldt",
+    "team": "Chicago Cubs",
+    "year": 1908,
+    "avg": 0.241,
+    "hr": 1,
+    "rbi": 62
+  },
+  {
+    "name": "Jerald Clark",
+    "team": "San Diego Padres",
+    "year": 1992,
+    "avg": 0.242,
+    "hr": 12,
+    "rbi": 58
+  },
+  {
+    "name": "Ian Kinsler",
+    "team": "Texas Rangers",
+    "year": 2009,
+    "avg": 0.253,
+    "hr": 31,
+    "rbi": 86
+  },
+  {
+    "name": "Walt Weiss",
+    "team": "Colorado Rockies",
+    "year": 1996,
+    "avg": 0.282,
+    "hr": 8,
+    "rbi": 48
+  },
+  {
+    "name": "Yogi Berra",
+    "team": "New York Yankees",
+    "year": 1955,
+    "avg": 0.272,
+    "hr": 27,
+    "rbi": 108
+  },
+  {
+    "name": "Red Murray",
+    "team": "New York Giants",
+    "year": 1912,
+    "avg": 0.277,
+    "hr": 3,
+    "rbi": 92
+  },
+  {
+    "name": "Dave Bancroft",
+    "team": "Philadelphia Phillies",
+    "year": 1915,
+    "avg": 0.254,
+    "hr": 7,
+    "rbi": 30
+  },
+  {
+    "name": "Fresco Thompson",
+    "team": "Philadelphia Phillies",
+    "year": 1929,
+    "avg": 0.324,
+    "hr": 4,
+    "rbi": 53
+  },
+  {
+    "name": "Lyn Lary",
+    "team": "Boston Red Sox",
+    "year": 1934,
+    "avg": 0.241,
+    "hr": 2,
+    "rbi": 54
+  },
+  {
+    "name": "Freddie Patek",
+    "team": "Kansas City Royals",
+    "year": 1975,
+    "avg": 0.228,
+    "hr": 5,
+    "rbi": 45
+  },
+  {
+    "name": "Marwin Gonzalez",
+    "team": "Houston Astros",
+    "year": 2017,
+    "avg": 0.303,
+    "hr": 23,
+    "rbi": 90
+  },
+  {
+    "name": "Minnie Miñoso",
+    "team": "Cleveland Indians",
+    "year": 1958,
+    "avg": 0.302,
+    "hr": 24,
+    "rbi": 80
+  },
+  {
+    "name": "Hughie Jennings",
+    "team": "Baltimore Orioles",
+    "year": 1897,
+    "avg": 0.355,
+    "hr": 2,
+    "rbi": 79
+  },
+  {
+    "name": "Lou Gehrig",
+    "team": "New York Yankees",
+    "year": 1937,
+    "avg": 0.351,
+    "hr": 37,
+    "rbi": 159
+  },
+  {
+    "name": "Harry Heilmann",
+    "team": "Detroit Tigers",
+    "year": 1920,
+    "avg": 0.309,
+    "hr": 9,
+    "rbi": 89
+  },
+  {
+    "name": "Billy Southworth",
+    "team": "Boston Braves",
+    "year": 1923,
+    "avg": 0.319,
+    "hr": 6,
+    "rbi": 78
+  },
+  {
+    "name": "Jack Graney",
+    "team": "Cleveland Naps",
+    "year": 1913,
+    "avg": 0.267,
+    "hr": 3,
+    "rbi": 68
+  },
+  {
+    "name": "Ryne Sandberg",
+    "team": "Chicago Cubs",
+    "year": 1983,
+    "avg": 0.261,
+    "hr": 8,
+    "rbi": 48
+  },
+  {
+    "name": "Alex Rodriguez",
+    "team": "New York Yankees",
+    "year": 2009,
+    "avg": 0.286,
+    "hr": 30,
+    "rbi": 100
+  },
+  {
+    "name": "Joe Birmingham",
+    "team": "Cleveland Naps",
+    "year": 1907,
+    "avg": 0.235,
+    "hr": 1,
+    "rbi": 33
+  },
+  {
+    "name": "Frank Taveras",
+    "team": "New York Mets",
+    "year": 1979,
+    "avg": 0.263,
+    "hr": 1,
+    "rbi": 33
+  },
+  {
+    "name": "Benny Kauff",
+    "team": "New York Giants",
+    "year": 1916,
+    "avg": 0.264,
+    "hr": 9,
+    "rbi": 74
+  },
+  {
+    "name": "Ray Boone",
+    "team": "Detroit Tigers",
+    "year": 1957,
+    "avg": 0.273,
+    "hr": 12,
+    "rbi": 65
+  },
+  {
+    "name": "Oris Hockett",
+    "team": "Cleveland Indians",
+    "year": 1943,
+    "avg": 0.276,
+    "hr": 2,
+    "rbi": 51
+  },
+  {
+    "name": "Harrison Bader",
+    "team": "New York Mets",
+    "year": 2024,
+    "avg": 0.236,
+    "hr": 12,
+    "rbi": 51
+  },
+  {
+    "name": "Gary Ward",
+    "team": "Texas Rangers",
+    "year": 1985,
+    "avg": 0.287,
+    "hr": 15,
+    "rbi": 70
+  },
+  {
+    "name": "Miguel Olivo",
+    "team": "Florida Marlins",
+    "year": 2006,
+    "avg": 0.263,
+    "hr": 16,
+    "rbi": 58
+  },
+  {
+    "name": "Ray Fosse",
+    "team": "Cleveland Indians",
+    "year": 1970,
+    "avg": 0.307,
+    "hr": 18,
+    "rbi": 61
+  },
+  {
+    "name": "Lee May",
+    "team": "Cincinnati Reds",
+    "year": 1968,
+    "avg": 0.29,
+    "hr": 22,
+    "rbi": 80
+  },
+  {
+    "name": "Shano Collins",
+    "team": "Chicago White Sox",
+    "year": 1920,
+    "avg": 0.303,
+    "hr": 1,
+    "rbi": 63
+  },
+  {
+    "name": "Danny Valencia",
+    "team": "Minnesota Twins",
+    "year": 2011,
+    "avg": 0.246,
+    "hr": 15,
+    "rbi": 72
+  },
+  {
+    "name": "Doc Gessler",
+    "team": "Washington Senators",
+    "year": 1911,
+    "avg": 0.282,
+    "hr": 4,
+    "rbi": 78
+  },
+  {
+    "name": "Charlie Hemphill",
+    "team": "New York Highlanders",
+    "year": 1908,
+    "avg": 0.297,
+    "hr": 0,
+    "rbi": 44
+  },
+  {
+    "name": "Dustin Ackley",
+    "team": "Seattle Mariners",
+    "year": 2014,
+    "avg": 0.245,
+    "hr": 14,
+    "rbi": 65
+  },
+  {
+    "name": "Jose Bautista",
+    "team": "Toronto Blue Jays",
+    "year": 2014,
+    "avg": 0.286,
+    "hr": 35,
+    "rbi": 103
+  },
+  {
+    "name": "Harlond Clift",
+    "team": "St. Louis Browns",
+    "year": 1938,
+    "avg": 0.29,
+    "hr": 34,
+    "rbi": 118
+  },
+  {
+    "name": "George Stovall",
+    "team": "Cleveland Naps",
+    "year": 1907,
+    "avg": 0.236,
+    "hr": 1,
+    "rbi": 36
+  },
+  {
+    "name": "Fred Pfeffer",
+    "team": "Chicago White Stockings",
+    "year": 1884,
+    "avg": 0.289,
+    "hr": 25,
+    "rbi": 101
+  },
+  {
+    "name": "J. T. Realmuto",
+    "team": "Philadelphia Phillies",
+    "year": 2021,
+    "avg": 0.263,
+    "hr": 17,
+    "rbi": 73
+  },
+  {
+    "name": "Gary Sheffield",
+    "team": "Detroit Tigers",
+    "year": 2007,
+    "avg": 0.265,
+    "hr": 25,
+    "rbi": 75
+  },
+  {
+    "name": "Bret Boone",
+    "team": "Seattle Mariners",
+    "year": 2003,
+    "avg": 0.294,
+    "hr": 35,
+    "rbi": 117
+  },
+  {
+    "name": "Babe Young",
+    "team": "New York Giants",
+    "year": 1940,
+    "avg": 0.286,
+    "hr": 17,
+    "rbi": 101
+  },
+  {
+    "name": "Ed Konetchy",
+    "team": "Brooklyn Robins",
+    "year": 1920,
+    "avg": 0.308,
+    "hr": 5,
+    "rbi": 63
+  },
+  {
+    "name": "Wayne Terwilliger",
+    "team": "Washington Senators",
+    "year": 1953,
+    "avg": 0.252,
+    "hr": 4,
+    "rbi": 46
+  },
+  {
+    "name": "Tris Speaker",
+    "team": "Cleveland Indians",
+    "year": 1921,
+    "avg": 0.362,
+    "hr": 3,
+    "rbi": 75
+  },
+  {
+    "name": "Jose Vidro",
+    "team": "Montreal Expos",
+    "year": 2000,
+    "avg": 0.33,
+    "hr": 24,
+    "rbi": 97
+  },
+  {
+    "name": "Nelson Cruz",
+    "team": "Seattle Mariners",
+    "year": 2018,
+    "avg": 0.256,
+    "hr": 37,
+    "rbi": 97
+  },
+  {
+    "name": "Chase Headley",
+    "team": "New York Yankees",
+    "year": 2016,
+    "avg": 0.253,
+    "hr": 14,
+    "rbi": 51
+  },
+  {
+    "name": "Pablo Sandoval",
+    "team": "San Francisco Giants",
+    "year": 2014,
+    "avg": 0.279,
+    "hr": 16,
+    "rbi": 73
+  },
+  {
+    "name": "Adolfo Phillips",
+    "team": "Chicago Cubs",
+    "year": 1967,
+    "avg": 0.268,
+    "hr": 17,
+    "rbi": 70
+  },
+  {
+    "name": "Matt Williams",
+    "team": "San Francisco Giants",
+    "year": 1993,
+    "avg": 0.294,
+    "hr": 38,
+    "rbi": 110
+  },
+  {
+    "name": "Travis Fryman",
+    "team": "Cleveland Indians",
+    "year": 2000,
+    "avg": 0.321,
+    "hr": 22,
+    "rbi": 106
+  },
+  {
+    "name": "Mike Cameron",
+    "team": "San Diego Padres",
+    "year": 2007,
+    "avg": 0.242,
+    "hr": 21,
+    "rbi": 78
+  },
+  {
+    "name": "Jonathan Schoop",
+    "team": "Detroit Tigers",
+    "year": 2022,
+    "avg": 0.202,
+    "hr": 11,
+    "rbi": 38
+  },
+  {
+    "name": "Alex Bregman",
+    "team": "Houston Astros",
+    "year": 2023,
+    "avg": 0.262,
+    "hr": 25,
+    "rbi": 98
+  },
+  {
+    "name": "Ty Cobb",
+    "team": "Detroit Tigers",
+    "year": 1908,
+    "avg": 0.324,
+    "hr": 4,
+    "rbi": 108
+  },
+  {
+    "name": "Deacon McGuire",
+    "team": "Washington Senators",
+    "year": 1898,
+    "avg": 0.268,
+    "hr": 1,
+    "rbi": 57
+  },
+  {
+    "name": "Don Blasingame",
+    "team": "St. Louis Cardinals",
+    "year": 1958,
+    "avg": 0.274,
+    "hr": 2,
+    "rbi": 36
+  },
+  {
+    "name": "Goody Rosen",
+    "team": "Brooklyn Dodgers",
+    "year": 1945,
+    "avg": 0.325,
+    "hr": 12,
+    "rbi": 75
+  },
+  {
+    "name": "Willi Castro",
+    "team": "Detroit Tigers",
+    "year": 2021,
+    "avg": 0.22,
+    "hr": 9,
+    "rbi": 38
+  },
+  {
+    "name": "Jack Fournier",
+    "team": "St. Louis Cardinals",
+    "year": 1922,
+    "avg": 0.295,
+    "hr": 10,
+    "rbi": 61
+  },
+  {
+    "name": "Ivy Olson",
+    "team": "Brooklyn Robins",
+    "year": 1918,
+    "avg": 0.239,
+    "hr": 1,
+    "rbi": 17
+  },
+  {
+    "name": "Scott Hatteberg",
+    "team": "Oakland Athletics",
+    "year": 2004,
+    "avg": 0.284,
+    "hr": 15,
+    "rbi": 82
+  },
+  {
+    "name": "Mike Kreevich",
+    "team": "Chicago White Sox",
+    "year": 1941,
+    "avg": 0.232,
+    "hr": 0,
+    "rbi": 37
+  },
+  {
+    "name": "Paul Waner",
+    "team": "Pittsburgh Pirates",
+    "year": 1936,
+    "avg": 0.373,
+    "hr": 5,
+    "rbi": 94
+  },
+  {
+    "name": "Reggie Jackson",
+    "team": "Oakland Athletics",
+    "year": 1972,
+    "avg": 0.265,
+    "hr": 25,
+    "rbi": 75
+  },
+  {
+    "name": "Homer Smoot",
+    "team": "St. Louis Cardinals",
+    "year": 1902,
+    "avg": 0.311,
+    "hr": 3,
+    "rbi": 48
+  },
+  {
+    "name": "Clete Boyer",
+    "team": "New York Yankees",
+    "year": 1965,
+    "avg": 0.251,
+    "hr": 18,
+    "rbi": 58
+  },
+  {
+    "name": "Carlos Baerga",
+    "team": "Cleveland Indians",
+    "year": 1991,
+    "avg": 0.288,
+    "hr": 11,
+    "rbi": 69
+  },
+  {
+    "name": "Gene Paulette",
+    "team": "St. Louis Cardinals",
+    "year": 1918,
+    "avg": 0.273,
+    "hr": 0,
+    "rbi": 52
+  },
+  {
+    "name": "Billy Werber",
+    "team": "Cincinnati Reds",
+    "year": 1940,
+    "avg": 0.277,
+    "hr": 12,
+    "rbi": 48
+  },
+  {
+    "name": "Craig Biggio",
+    "team": "Houston Astros",
+    "year": 2007,
+    "avg": 0.251,
+    "hr": 10,
+    "rbi": 50
+  },
+  {
+    "name": "Johnny Bates",
+    "team": "Philadelphia Phillies",
+    "year": 1910,
+    "avg": 0.305,
+    "hr": 3,
+    "rbi": 61
+  },
+  {
+    "name": "Joe Randa",
+    "team": "Kansas City Royals",
+    "year": 2001,
+    "avg": 0.253,
+    "hr": 13,
+    "rbi": 83
+  },
+  {
+    "name": "Oris Hockett",
+    "team": "Cleveland Indians",
+    "year": 1944,
+    "avg": 0.289,
+    "hr": 1,
+    "rbi": 50
+  },
+  {
+    "name": "Alfredo Griffin",
+    "team": "Oakland Athletics",
+    "year": 1985,
+    "avg": 0.27,
+    "hr": 2,
+    "rbi": 64
+  },
+  {
+    "name": "Benny McCoy",
+    "team": "Philadelphia Athletics",
+    "year": 1941,
+    "avg": 0.271,
+    "hr": 8,
+    "rbi": 61
+  },
+  {
+    "name": "Gerald Williams",
+    "team": "Atlanta Braves",
+    "year": 1999,
+    "avg": 0.275,
+    "hr": 17,
+    "rbi": 68
+  },
+  {
+    "name": "Charley Smith",
+    "team": "New York Mets",
+    "year": 1964,
+    "avg": 0.239,
+    "hr": 20,
+    "rbi": 58
+  },
+  {
+    "name": "Carney Lansford",
+    "team": "Boston Red Sox",
+    "year": 1982,
+    "avg": 0.301,
+    "hr": 11,
+    "rbi": 63
+  },
+  {
+    "name": "Bob Watson",
+    "team": "Houston Astros",
+    "year": 1977,
+    "avg": 0.289,
+    "hr": 22,
+    "rbi": 110
+  },
+  {
+    "name": "Pop Smith",
+    "team": "Pittsburg Alleghenys",
+    "year": 1886,
+    "avg": 0.217,
+    "hr": 2,
+    "rbi": 57
+  },
+  {
+    "name": "Jason Kubel",
+    "team": "Arizona Diamondbacks",
+    "year": 2012,
+    "avg": 0.253,
+    "hr": 30,
+    "rbi": 90
+  },
+  {
+    "name": "Roberto Alomar",
+    "team": "Baltimore Orioles",
+    "year": 1998,
+    "avg": 0.282,
+    "hr": 14,
+    "rbi": 56
+  },
+  {
+    "name": "Hank Greenberg",
+    "team": "Detroit Tigers",
+    "year": 1937,
+    "avg": 0.337,
+    "hr": 40,
+    "rbi": 183
+  },
+  {
+    "name": "Vern Stephens",
+    "team": "St. Louis Browns",
+    "year": 1942,
+    "avg": 0.294,
+    "hr": 14,
+    "rbi": 92
+  },
+  {
+    "name": "Vladimir Guerrero",
+    "team": "Montreal Expos",
+    "year": 1999,
+    "avg": 0.316,
+    "hr": 42,
+    "rbi": 131
+  },
+  {
+    "name": "Cesar Cedeno",
+    "team": "Houston Astros",
+    "year": 1974,
+    "avg": 0.269,
+    "hr": 26,
+    "rbi": 102
+  },
+  {
+    "name": "Travis Hafner",
+    "team": "Cleveland Indians",
+    "year": 2006,
+    "avg": 0.308,
+    "hr": 42,
+    "rbi": 117
+  },
+  {
+    "name": "Clyde Milan",
+    "team": "Washington Senators",
+    "year": 1910,
+    "avg": 0.279,
+    "hr": 0,
+    "rbi": 16
+  },
+  {
+    "name": "Felix Millan",
+    "team": "New York Mets",
+    "year": 1975,
+    "avg": 0.283,
+    "hr": 1,
+    "rbi": 56
+  },
+  {
+    "name": "Eddie Lake",
+    "team": "Detroit Tigers",
+    "year": 1947,
+    "avg": 0.211,
+    "hr": 12,
+    "rbi": 46
+  },
+  {
+    "name": "Al Martin",
+    "team": "Pittsburgh Pirates",
+    "year": 1997,
+    "avg": 0.291,
+    "hr": 13,
+    "rbi": 59
+  },
+  {
+    "name": "Frank Bolling",
+    "team": "Milwaukee Braves",
+    "year": 1962,
+    "avg": 0.271,
+    "hr": 9,
+    "rbi": 43
+  },
+  {
+    "name": "Richie Ashburn",
+    "team": "Philadelphia Phillies",
+    "year": 1955,
+    "avg": 0.338,
+    "hr": 3,
+    "rbi": 42
+  },
+  {
+    "name": "Tim Raines",
+    "team": "Montreal Expos",
+    "year": 1987,
+    "avg": 0.33,
+    "hr": 18,
+    "rbi": 68
+  },
+  {
+    "name": "Mike Cameron",
+    "team": "New York Mets",
+    "year": 2004,
+    "avg": 0.231,
+    "hr": 30,
+    "rbi": 76
+  },
+  {
+    "name": "Adrian Beltre",
+    "team": "Los Angeles Dodgers",
+    "year": 2001,
+    "avg": 0.265,
+    "hr": 13,
+    "rbi": 60
+  },
+  {
+    "name": "Ryan McMahon",
+    "team": "Colorado Rockies",
+    "year": 2021,
+    "avg": 0.254,
+    "hr": 23,
+    "rbi": 86
+  },
+  {
+    "name": "Clint Barmes",
+    "team": "Colorado Rockies",
+    "year": 2006,
+    "avg": 0.22,
+    "hr": 7,
+    "rbi": 56
+  },
+  {
+    "name": "Cliff Heathcote",
+    "team": "St. Louis Cardinals",
+    "year": 1920,
+    "avg": 0.284,
+    "hr": 3,
+    "rbi": 56
+  },
+  {
+    "name": "Julio Cruz",
+    "team": "Seattle Mariners",
+    "year": 1978,
+    "avg": 0.235,
+    "hr": 1,
+    "rbi": 25
+  },
+  {
+    "name": "Carl Yastrzemski",
+    "team": "Boston Red Sox",
+    "year": 1963,
+    "avg": 0.321,
+    "hr": 14,
+    "rbi": 68
+  },
+  {
+    "name": "Burt Shotton",
+    "team": "Washington Senators",
+    "year": 1918,
+    "avg": 0.261,
+    "hr": 0,
+    "rbi": 21
+  },
+  {
+    "name": "Chico Fernandez",
+    "team": "Detroit Tigers",
+    "year": 1960,
+    "avg": 0.241,
+    "hr": 4,
+    "rbi": 35
+  },
+  {
+    "name": "Willie Mays",
+    "team": "New York Giants",
+    "year": 1956,
+    "avg": 0.296,
+    "hr": 36,
+    "rbi": 84
+  },
+  {
+    "name": "Craig Biggio",
+    "team": "Houston Astros",
+    "year": 2004,
+    "avg": 0.281,
+    "hr": 24,
+    "rbi": 63
+  },
+  {
+    "name": "Juan Gonzalez",
+    "team": "Texas Rangers",
+    "year": 1991,
+    "avg": 0.264,
+    "hr": 27,
+    "rbi": 102
+  },
+  {
+    "name": "Todd Walker",
+    "team": "Boston Red Sox",
+    "year": 2003,
+    "avg": 0.283,
+    "hr": 13,
+    "rbi": 85
+  },
+  {
+    "name": "Xander Bogaerts",
+    "team": "Boston Red Sox",
+    "year": 2015,
+    "avg": 0.32,
+    "hr": 7,
+    "rbi": 81
+  },
+  {
+    "name": "Craig Counsell",
+    "team": "Arizona Diamondbacks",
+    "year": 2002,
+    "avg": 0.282,
+    "hr": 2,
+    "rbi": 51
+  },
+  {
+    "name": "Adonis Garcia",
+    "team": "Atlanta Braves",
+    "year": 2016,
+    "avg": 0.273,
+    "hr": 14,
+    "rbi": 65
+  },
+  {
+    "name": "Bob Bescher",
+    "team": "Cincinnati Reds",
+    "year": 1909,
+    "avg": 0.24,
+    "hr": 1,
+    "rbi": 34
+  },
+  {
+    "name": "Fernando Tatis",
+    "team": "St. Louis Cardinals",
+    "year": 1999,
+    "avg": 0.298,
+    "hr": 34,
+    "rbi": 107
+  },
+  {
+    "name": "Gary Gaetti",
+    "team": "Minnesota Twins",
+    "year": 1985,
+    "avg": 0.246,
+    "hr": 20,
+    "rbi": 63
+  },
+  {
+    "name": "Kirby Puckett",
+    "team": "Minnesota Twins",
+    "year": 1986,
+    "avg": 0.328,
+    "hr": 31,
+    "rbi": 96
+  },
+  {
+    "name": "Jim Morrison",
+    "team": "Chicago White Sox",
+    "year": 1980,
+    "avg": 0.283,
+    "hr": 15,
+    "rbi": 57
+  },
+  {
+    "name": "Todd Zeile",
+    "team": "St. Louis Cardinals",
+    "year": 1990,
+    "avg": 0.244,
+    "hr": 15,
+    "rbi": 57
+  },
+  {
+    "name": "Bo Bichette",
+    "team": "Toronto Blue Jays",
+    "year": 2021,
+    "avg": 0.298,
+    "hr": 29,
+    "rbi": 102
+  },
+  {
+    "name": "Frank Taveras",
+    "team": "Pittsburgh Pirates",
+    "year": 1976,
+    "avg": 0.258,
+    "hr": 0,
+    "rbi": 24
+  },
+  {
+    "name": "Lenny Dykstra",
+    "team": "New York Mets",
+    "year": 1987,
+    "avg": 0.285,
+    "hr": 10,
+    "rbi": 43
+  },
+  {
+    "name": "Mickey Stanley",
+    "team": "Detroit Tigers",
+    "year": 1970,
+    "avg": 0.252,
+    "hr": 13,
+    "rbi": 47
+  },
+  {
+    "name": "Chris Chambliss",
+    "team": "Atlanta Braves",
+    "year": 1982,
+    "avg": 0.27,
+    "hr": 20,
+    "rbi": 86
+  },
+  {
+    "name": "Billy Williams",
+    "team": "Chicago Cubs",
+    "year": 1964,
+    "avg": 0.312,
+    "hr": 33,
+    "rbi": 98
+  },
+  {
+    "name": "Bump Wills",
+    "team": "Texas Rangers",
+    "year": 1977,
+    "avg": 0.287,
+    "hr": 9,
+    "rbi": 62
+  },
+  {
+    "name": "Starlin Castro",
+    "team": "Chicago Cubs",
+    "year": 2012,
+    "avg": 0.283,
+    "hr": 14,
+    "rbi": 78
+  },
+  {
+    "name": "Lou Whitaker",
+    "team": "Detroit Tigers",
+    "year": 1985,
+    "avg": 0.279,
+    "hr": 21,
+    "rbi": 73
+  },
+  {
+    "name": "Wayne Gross",
+    "team": "Oakland Athletics",
+    "year": 1979,
+    "avg": 0.224,
+    "hr": 14,
+    "rbi": 50
+  },
+  {
+    "name": "Bryce Harper",
+    "team": "Philadelphia Phillies",
+    "year": 2019,
+    "avg": 0.26,
+    "hr": 35,
+    "rbi": 114
+  },
+  {
+    "name": "Magglio Ordonez",
+    "team": "Chicago White Sox",
+    "year": 2003,
+    "avg": 0.317,
+    "hr": 29,
+    "rbi": 99
+  },
+  {
+    "name": "Paul Radford",
+    "team": "Washington Senators",
+    "year": 1892,
+    "avg": 0.255,
+    "hr": 1,
+    "rbi": 37
+  },
+  {
+    "name": "Billy O'Brien",
+    "team": "Washington Nationals",
+    "year": 1887,
+    "avg": 0.278,
+    "hr": 19,
+    "rbi": 73
+  },
+  {
+    "name": "Darryl Strawberry",
+    "team": "New York Mets",
+    "year": 1983,
+    "avg": 0.257,
+    "hr": 26,
+    "rbi": 74
+  },
+  {
+    "name": "Kevin Newman",
+    "team": "Pittsburgh Pirates",
+    "year": 2021,
+    "avg": 0.226,
+    "hr": 5,
+    "rbi": 39
+  },
+  {
+    "name": "Kelly Gruber",
+    "team": "Toronto Blue Jays",
+    "year": 1990,
+    "avg": 0.274,
+    "hr": 31,
+    "rbi": 118
+  },
+  {
+    "name": "Max Kepler",
+    "team": "Minnesota Twins",
+    "year": 2019,
+    "avg": 0.252,
+    "hr": 36,
+    "rbi": 90
+  },
+  {
+    "name": "Joe Girardi",
+    "team": "New York Yankees",
+    "year": 1996,
+    "avg": 0.294,
+    "hr": 2,
+    "rbi": 45
+  },
+  {
+    "name": "Frank Robinson",
+    "team": "Baltimore Orioles",
+    "year": 1966,
+    "avg": 0.316,
+    "hr": 49,
+    "rbi": 122
+  },
+  {
+    "name": "Keith Hernandez",
+    "team": "New York Mets",
+    "year": 1985,
+    "avg": 0.309,
+    "hr": 10,
+    "rbi": 91
+  },
+  {
+    "name": "Jeff Heath",
+    "team": "Cleveland Indians",
+    "year": 1938,
+    "avg": 0.343,
+    "hr": 21,
+    "rbi": 112
+  },
+  {
+    "name": "Derrek Lee",
+    "team": "Chicago Cubs",
+    "year": 2008,
+    "avg": 0.291,
+    "hr": 20,
+    "rbi": 90
+  },
+  {
+    "name": "Steve Lombardozzi",
+    "team": "Minnesota Twins",
+    "year": 1987,
+    "avg": 0.238,
+    "hr": 8,
+    "rbi": 38
+  },
+  {
+    "name": "George Kell",
+    "team": "Detroit Tigers",
+    "year": 1946,
+    "avg": 0.327,
+    "hr": 4,
+    "rbi": 41
+  },
+  {
+    "name": "Joe Werrick",
+    "team": "Louisville Colonels",
+    "year": 1887,
+    "avg": 0.285,
+    "hr": 7,
+    "rbi": 99
+  },
+  {
+    "name": "Jose Vidro",
+    "team": "Seattle Mariners",
+    "year": 2007,
+    "avg": 0.314,
+    "hr": 6,
+    "rbi": 59
+  },
+  {
+    "name": "Ozzie Guillen",
+    "team": "Chicago White Sox",
+    "year": 1987,
+    "avg": 0.279,
+    "hr": 2,
+    "rbi": 51
+  },
+  {
+    "name": "Bob Elliott",
+    "team": "Pittsburgh Pirates",
+    "year": 1944,
+    "avg": 0.297,
+    "hr": 10,
+    "rbi": 108
+  },
+  {
+    "name": "Chad Tracy",
+    "team": "Arizona Diamondbacks",
+    "year": 2005,
+    "avg": 0.308,
+    "hr": 27,
+    "rbi": 72
+  },
+  {
+    "name": "Buck Weaver",
+    "team": "Chicago White Sox",
+    "year": 1920,
+    "avg": 0.331,
+    "hr": 2,
+    "rbi": 75
+  },
+  {
+    "name": "David Bell",
+    "team": "Philadelphia Phillies",
+    "year": 2005,
+    "avg": 0.248,
+    "hr": 10,
+    "rbi": 61
+  },
+  {
+    "name": "Hal Chase",
+    "team": "New York Highlanders",
+    "year": 1906,
+    "avg": 0.323,
+    "hr": 0,
+    "rbi": 76
+  },
+  {
+    "name": "Trevor Story",
+    "team": "Colorado Rockies",
+    "year": 2019,
+    "avg": 0.294,
+    "hr": 35,
+    "rbi": 85
+  },
+  {
+    "name": "Graig Nettles",
+    "team": "San Diego Padres",
+    "year": 1985,
+    "avg": 0.261,
+    "hr": 15,
+    "rbi": 61
+  },
+  {
+    "name": "John Kruk",
+    "team": "Philadelphia Phillies",
+    "year": 1991,
+    "avg": 0.294,
+    "hr": 21,
+    "rbi": 92
+  },
+  {
+    "name": "Wally Pipp",
+    "team": "New York Yankees",
+    "year": 1923,
+    "avg": 0.304,
+    "hr": 6,
+    "rbi": 108
+  },
+  {
+    "name": "Felipe Alou",
+    "team": "Atlanta Braves",
+    "year": 1967,
+    "avg": 0.274,
+    "hr": 15,
+    "rbi": 43
+  },
+  {
+    "name": "Mickey Rocco",
+    "team": "Cleveland Indians",
+    "year": 1945,
+    "avg": 0.264,
+    "hr": 10,
+    "rbi": 56
+  },
+  {
+    "name": "Ron Hunt",
+    "team": "Montreal Expos",
+    "year": 1971,
+    "avg": 0.279,
+    "hr": 5,
+    "rbi": 38
+  },
+  {
+    "name": "Lonnie Smith",
+    "team": "Atlanta Braves",
+    "year": 1989,
+    "avg": 0.315,
+    "hr": 21,
+    "rbi": 79
+  },
+  {
+    "name": "Mike Davis",
+    "team": "Oakland Athletics",
+    "year": 1985,
+    "avg": 0.287,
+    "hr": 24,
+    "rbi": 82
+  },
+  {
+    "name": "Cesar Izturis",
+    "team": "Los Angeles Dodgers",
+    "year": 2005,
+    "avg": 0.257,
+    "hr": 2,
+    "rbi": 31
+  },
+  {
+    "name": "Dick McAuliffe",
+    "team": "Detroit Tigers",
+    "year": 1962,
+    "avg": 0.263,
+    "hr": 12,
+    "rbi": 63
+  },
+  {
+    "name": "Clete Boyer",
+    "team": "Atlanta Braves",
+    "year": 1970,
+    "avg": 0.246,
+    "hr": 16,
+    "rbi": 62
+  },
+  {
+    "name": "Frank Robinson",
+    "team": "Cincinnati Reds",
+    "year": 1962,
+    "avg": 0.342,
+    "hr": 39,
+    "rbi": 136
+  },
+  {
+    "name": "Roberto Clemente",
+    "team": "Pittsburgh Pirates",
+    "year": 1968,
+    "avg": 0.291,
+    "hr": 18,
+    "rbi": 57
+  },
+  {
+    "name": "Jonathan Lucroy",
+    "team": "Milwaukee Brewers",
+    "year": 2011,
+    "avg": 0.265,
+    "hr": 12,
+    "rbi": 59
+  },
+  {
+    "name": "Tom Jones",
+    "team": "Detroit Tigers",
+    "year": 1910,
+    "avg": 0.255,
+    "hr": 1,
+    "rbi": 45
+  },
+  {
+    "name": "Will Clark",
+    "team": "San Francisco Giants",
+    "year": 1993,
+    "avg": 0.283,
+    "hr": 14,
+    "rbi": 73
+  },
+  {
+    "name": "Eddie Murray",
+    "team": "Baltimore Orioles",
+    "year": 1977,
+    "avg": 0.283,
+    "hr": 27,
+    "rbi": 88
+  },
+  {
+    "name": "Kirk Gibson",
+    "team": "Detroit Tigers",
+    "year": 1985,
+    "avg": 0.287,
+    "hr": 29,
+    "rbi": 97
+  },
+  {
+    "name": "Rafael Palmeiro",
+    "team": "Texas Rangers",
+    "year": 1991,
+    "avg": 0.322,
+    "hr": 26,
+    "rbi": 88
+  },
+  {
+    "name": "Nick Castellanos",
+    "team": "Philadelphia Phillies",
+    "year": 2025,
+    "avg": 0.25,
+    "hr": 17,
+    "rbi": 72
+  },
+  {
+    "name": "Candy Nelson",
+    "team": "New York Metropolitans",
+    "year": 1886,
+    "avg": 0.225,
+    "hr": 0,
+    "rbi": 23
+  },
+  {
+    "name": "Bret Boone",
+    "team": "Atlanta Braves",
+    "year": 1999,
+    "avg": 0.252,
+    "hr": 20,
+    "rbi": 63
+  },
+  {
+    "name": "George Kelly",
+    "team": "Cincinnati Reds",
+    "year": 1929,
+    "avg": 0.293,
+    "hr": 5,
+    "rbi": 103
+  },
+  {
+    "name": "Ron Swoboda",
+    "team": "New York Mets",
+    "year": 1968,
+    "avg": 0.242,
+    "hr": 11,
+    "rbi": 59
+  },
+  {
+    "name": "Bengie Molina",
+    "team": "Toronto Blue Jays",
+    "year": 2006,
+    "avg": 0.284,
+    "hr": 19,
+    "rbi": 57
+  },
+  {
+    "name": "Eric Young",
+    "team": "Milwaukee Brewers",
+    "year": 2003,
+    "avg": 0.26,
+    "hr": 15,
+    "rbi": 31
+  },
+  {
+    "name": "Alcides Escobar",
+    "team": "Kansas City Royals",
+    "year": 2013,
+    "avg": 0.234,
+    "hr": 4,
+    "rbi": 52
+  },
+  {
+    "name": "Marlon Byrd",
+    "team": "Philadelphia Phillies",
+    "year": 2014,
+    "avg": 0.264,
+    "hr": 25,
+    "rbi": 85
+  },
+  {
+    "name": "Lonnie Smith",
+    "team": "Kansas City Royals",
+    "year": 1986,
+    "avg": 0.287,
+    "hr": 8,
+    "rbi": 44
+  },
+  {
+    "name": "Del Ennis",
+    "team": "Philadelphia Phillies",
+    "year": 1956,
+    "avg": 0.26,
+    "hr": 26,
+    "rbi": 95
+  },
+  {
+    "name": "Lloyd Moseby",
+    "team": "Toronto Blue Jays",
+    "year": 1989,
+    "avg": 0.221,
+    "hr": 11,
+    "rbi": 43
+  },
+  {
+    "name": "Tony Gonzalez",
+    "team": "Atlanta Braves",
+    "year": 1970,
+    "avg": 0.265,
+    "hr": 7,
+    "rbi": 55
+  },
+  {
+    "name": "Ned Hanlon",
+    "team": "Detroit Wolverines",
+    "year": 1886,
+    "avg": 0.235,
+    "hr": 4,
+    "rbi": 60
+  },
+  {
+    "name": "Ozzie Smith",
+    "team": "St. Louis Cardinals",
+    "year": 1986,
+    "avg": 0.28,
+    "hr": 0,
+    "rbi": 54
+  },
+  {
+    "name": "Aaron Boone",
+    "team": "Cincinnati Reds",
+    "year": 2003,
+    "avg": 0.273,
+    "hr": 18,
+    "rbi": 65
+  },
+  {
+    "name": "Tom Brookens",
+    "team": "Detroit Tigers",
+    "year": 1985,
+    "avg": 0.237,
+    "hr": 7,
+    "rbi": 47
+  },
+  {
+    "name": "Toby Harrah",
+    "team": "Cleveland Indians",
+    "year": 1979,
+    "avg": 0.279,
+    "hr": 20,
+    "rbi": 77
+  },
+  {
+    "name": "Eric Young",
+    "team": "Los Angeles Dodgers",
+    "year": 1999,
+    "avg": 0.281,
+    "hr": 2,
+    "rbi": 41
+  },
+  {
+    "name": "Claude Rossman",
+    "team": "Detroit Tigers",
+    "year": 1907,
+    "avg": 0.277,
+    "hr": 0,
+    "rbi": 69
+  },
+  {
+    "name": "Jimmie Foxx",
+    "team": "Boston Red Sox",
+    "year": 1937,
+    "avg": 0.285,
+    "hr": 36,
+    "rbi": 127
+  },
+  {
+    "name": "Ozzie Virgil",
+    "team": "Philadelphia Phillies",
+    "year": 1985,
+    "avg": 0.246,
+    "hr": 19,
+    "rbi": 55
+  },
+  {
+    "name": "Willie Randolph",
+    "team": "New York Yankees",
+    "year": 1977,
+    "avg": 0.274,
+    "hr": 4,
+    "rbi": 40
+  },
+  {
+    "name": "Mike Dorgan",
+    "team": "New York Giants",
+    "year": 1886,
+    "avg": 0.292,
+    "hr": 2,
+    "rbi": 79
+  },
+  {
+    "name": "Al Boucher",
+    "team": "St. Louis Terriers",
+    "year": 1914,
+    "avg": 0.231,
+    "hr": 2,
+    "rbi": 49
+  },
+  {
+    "name": "Tony Fernandez",
+    "team": "Toronto Blue Jays",
+    "year": 1998,
+    "avg": 0.321,
+    "hr": 9,
+    "rbi": 72
+  },
+  {
+    "name": "Dave Bancroft",
+    "team": "Brooklyn Robins",
+    "year": 1928,
+    "avg": 0.247,
+    "hr": 0,
+    "rbi": 51
+  },
+  {
+    "name": "Dave Cash",
+    "team": "Pittsburgh Pirates",
+    "year": 1972,
+    "avg": 0.282,
+    "hr": 3,
+    "rbi": 30
+  },
+  {
+    "name": "Freddy Leach",
+    "team": "New York Giants",
+    "year": 1930,
+    "avg": 0.327,
+    "hr": 13,
+    "rbi": 71
+  },
+  {
+    "name": "Willie Wilson",
+    "team": "Kansas City Royals",
+    "year": 1987,
+    "avg": 0.279,
+    "hr": 4,
+    "rbi": 30
+  },
+  {
+    "name": "Jake Daubert",
+    "team": "Cincinnati Reds",
+    "year": 1923,
+    "avg": 0.292,
+    "hr": 2,
+    "rbi": 54
+  },
+  {
+    "name": "Randal Grichuk",
+    "team": "Colorado Rockies",
+    "year": 2022,
+    "avg": 0.259,
+    "hr": 19,
+    "rbi": 73
+  },
+  {
+    "name": "Joe Kuhel",
+    "team": "Washington Senators",
+    "year": 1945,
+    "avg": 0.285,
+    "hr": 2,
+    "rbi": 75
+  },
+  {
+    "name": "John Dobbs",
+    "team": "Cincinnati Reds",
+    "year": 1901,
+    "avg": 0.274,
+    "hr": 2,
+    "rbi": 27
+  },
+  {
+    "name": "Willy Adames",
+    "team": "Tampa Bay Rays",
+    "year": 2019,
+    "avg": 0.254,
+    "hr": 20,
+    "rbi": 52
+  },
+  {
+    "name": "Charlie Hayes",
+    "team": "Colorado Rockies",
+    "year": 1993,
+    "avg": 0.305,
+    "hr": 25,
+    "rbi": 98
+  },
+  {
+    "name": "Hank Greenberg",
+    "team": "Detroit Tigers",
+    "year": 1940,
+    "avg": 0.34,
+    "hr": 41,
+    "rbi": 150
+  },
+  {
+    "name": "Skip Schumaker",
+    "team": "St. Louis Cardinals",
+    "year": 2010,
+    "avg": 0.265,
+    "hr": 5,
+    "rbi": 42
+  },
+  {
+    "name": "Brenton Doyle",
+    "team": "Colorado Rockies",
+    "year": 2024,
+    "avg": 0.26,
+    "hr": 23,
+    "rbi": 72
+  },
+  {
+    "name": "Pete O'Brien",
+    "team": "Texas Rangers",
+    "year": 1988,
+    "avg": 0.272,
+    "hr": 16,
+    "rbi": 71
+  },
+  {
+    "name": "Jose Lopez",
+    "team": "Seattle Mariners",
+    "year": 2006,
+    "avg": 0.282,
+    "hr": 10,
+    "rbi": 79
+  },
+  {
+    "name": "Dick McAuliffe",
+    "team": "Detroit Tigers",
+    "year": 1964,
+    "avg": 0.241,
+    "hr": 24,
+    "rbi": 66
+  },
+  {
+    "name": "Ed Abbaticchio",
+    "team": "Pittsburgh Pirates",
+    "year": 1908,
+    "avg": 0.25,
+    "hr": 1,
+    "rbi": 61
+  },
+  {
+    "name": "Jason Giambi",
+    "team": "Oakland Athletics",
+    "year": 1997,
+    "avg": 0.293,
+    "hr": 20,
+    "rbi": 81
+  },
+  {
+    "name": "Cy Williams",
+    "team": "Philadelphia Phillies",
+    "year": 1921,
+    "avg": 0.32,
+    "hr": 18,
+    "rbi": 75
+  },
+  {
+    "name": "Shawon Dunston",
+    "team": "Chicago Cubs",
+    "year": 1995,
+    "avg": 0.296,
+    "hr": 14,
+    "rbi": 69
+  },
+  {
+    "name": "Paul DeJong",
+    "team": "St. Louis Cardinals",
+    "year": 2019,
+    "avg": 0.233,
+    "hr": 30,
+    "rbi": 78
+  },
+  {
+    "name": "Jim Rice",
+    "team": "Boston Red Sox",
+    "year": 1978,
+    "avg": 0.315,
+    "hr": 46,
+    "rbi": 139
+  },
+  {
+    "name": "Nico Hoerner",
+    "team": "Chicago Cubs",
+    "year": 2024,
+    "avg": 0.273,
+    "hr": 7,
+    "rbi": 48
+  },
+  {
+    "name": "Brandon Crawford",
+    "team": "San Francisco Giants",
+    "year": 2016,
+    "avg": 0.275,
+    "hr": 12,
+    "rbi": 84
+  },
+  {
+    "name": "Willie Horton",
+    "team": "Seattle Mariners",
+    "year": 1979,
+    "avg": 0.279,
+    "hr": 29,
+    "rbi": 106
+  },
+  {
+    "name": "Matt Wieters",
+    "team": "Baltimore Orioles",
+    "year": 2016,
+    "avg": 0.243,
+    "hr": 17,
+    "rbi": 66
+  },
+  {
+    "name": "Ryan Howard",
+    "team": "Philadelphia Phillies",
+    "year": 2011,
+    "avg": 0.253,
+    "hr": 33,
+    "rbi": 116
+  },
+  {
+    "name": "Chet Lemon",
+    "team": "Chicago White Sox",
+    "year": 1979,
+    "avg": 0.318,
+    "hr": 17,
+    "rbi": 86
+  },
+  {
+    "name": "Brennan Boesch",
+    "team": "Detroit Tigers",
+    "year": 2010,
+    "avg": 0.256,
+    "hr": 14,
+    "rbi": 67
+  },
+  {
+    "name": "Phil Lewis",
+    "team": "Brooklyn Superbas",
+    "year": 1908,
+    "avg": 0.219,
+    "hr": 1,
+    "rbi": 30
+  },
+  {
+    "name": "Bill Nicholson",
+    "team": "Chicago Cubs",
+    "year": 1945,
+    "avg": 0.243,
+    "hr": 13,
+    "rbi": 88
+  },
+  {
+    "name": "Trent Grisham",
+    "team": "San Diego Padres",
+    "year": 2023,
+    "avg": 0.198,
+    "hr": 13,
+    "rbi": 50
+  },
+  {
+    "name": "Brock Holt",
+    "team": "Boston Red Sox",
+    "year": 2014,
+    "avg": 0.281,
+    "hr": 4,
+    "rbi": 29
+  },
+  {
+    "name": "Matt Chapman",
+    "team": "Toronto Blue Jays",
+    "year": 2022,
+    "avg": 0.229,
+    "hr": 27,
+    "rbi": 76
+  },
+  {
+    "name": "Dib Williams",
+    "team": "Philadelphia Athletics",
+    "year": 1933,
+    "avg": 0.289,
+    "hr": 11,
+    "rbi": 73
+  },
+  {
+    "name": "Dave Kingman",
+    "team": "New York Mets",
+    "year": 1975,
+    "avg": 0.231,
+    "hr": 36,
+    "rbi": 88
+  },
+  {
+    "name": "Fred Pfeffer",
+    "team": "Louisville Colonels",
+    "year": 1892,
+    "avg": 0.257,
+    "hr": 2,
+    "rbi": 76
+  },
+  {
+    "name": "Johnny Lipon",
+    "team": "Detroit Tigers",
+    "year": 1948,
+    "avg": 0.29,
+    "hr": 5,
+    "rbi": 52
+  },
+  {
+    "name": "Asdrubal Cabrera",
+    "team": "New York Mets",
+    "year": 2016,
+    "avg": 0.28,
+    "hr": 23,
+    "rbi": 62
+  },
+  {
+    "name": "Miguel Tejada",
+    "team": "Baltimore Orioles",
+    "year": 2004,
+    "avg": 0.311,
+    "hr": 34,
+    "rbi": 150
+  }
+]
