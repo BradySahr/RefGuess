@@ -137,6 +137,12 @@ function main() {
       obp,
       slg,
       ops,
+      // Not shown as their own columns, but needed to compute an
+      // accurate career OBP/SLG/OPS later (can't just average the
+      // per-season rates — has to be recalculated from raw totals).
+      hbp,
+      sf: sacFlies,
+      tb: totalBases,
     });
   }
 
@@ -152,7 +158,49 @@ function main() {
 
     seasons.sort((a, b) => a.year - b.year); // oldest season first
 
-    players.push({ name, seasons });
+    // Sum up the counting stats across every season for the career row.
+    const sum = (key) => seasons.reduce((total, s) => total + s[key], 0);
+    const careerG = sum("g");
+    const careerAtBats = careerAB; // already summed above
+    const careerR = sum("r");
+    const careerH = sum("h");
+    const careerDoubles = sum("doubles");
+    const careerTriples = sum("triples");
+    const careerHR = sum("hr");
+    const careerRBI = sum("rbi");
+    const careerSB = sum("sb");
+    const careerBB = sum("bb");
+    const careerSO = sum("so");
+    const careerHBP = sum("hbp");
+    const careerSF = sum("sf");
+    const careerTB = sum("tb");
+
+    // Same rule as individual seasons: derive OBP/SLG/OPS from the raw
+    // career totals, and round only once at the very end, rather than
+    // averaging together each season's already-rounded rate stats.
+    const obpDenominator = careerAtBats + careerBB + careerHBP + careerSF;
+    const rawObp = obpDenominator > 0 ? (careerH + careerBB + careerHBP) / obpDenominator : 0;
+    const rawSlg = careerAtBats > 0 ? careerTB / careerAtBats : 0;
+
+    const career = {
+      g: careerG,
+      ab: careerAtBats,
+      r: careerR,
+      h: careerH,
+      doubles: careerDoubles,
+      triples: careerTriples,
+      hr: careerHR,
+      rbi: careerRBI,
+      sb: careerSB,
+      bb: careerBB,
+      so: careerSO,
+      avg: careerAtBats > 0 ? Math.round((careerH / careerAtBats) * 1000) / 1000 : 0,
+      obp: Math.round(rawObp * 1000) / 1000,
+      slg: Math.round(rawSlg * 1000) / 1000,
+      ops: Math.round((rawObp + rawSlg) * 1000) / 1000,
+    };
+
+    players.push({ name, seasons, career });
   }
 
   console.log(`Found ${players.length} qualifying careers.`);
