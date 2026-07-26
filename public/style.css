@@ -132,3 +132,32 @@ button:hover { background: #a63a0c; }
   color: #6b6a63;
   text-align: right;
 }
+.autocomplete-wrapper {
+  position: relative;
+  display: inline-block;
+}
+#suggestions {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: #fff;
+  border: 1px solid #ccc;
+  max-height: 220px;
+  overflow-y: auto;
+  z-index: 10;
+  text-align: left;
+  display: none;
+}
+#suggestions.visible {
+  display: block;
+}
+.suggestion-item {
+  padding: 6px 10px;
+  cursor: pointer;
+  color: #222;
+}
+.suggestion-item:hover,
+.suggestion-item.active {
+  background: #eee;
+}

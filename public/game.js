@@ -10,7 +10,62 @@ let currentPlayer = null;
 let correctCount = 0;
 let totalCount = 0;
 
-// ---------- 3. PICK A RANDOM PLAYER AND SHOW THEIR STATS ----------
+// ---------- 3. LIVE-FILTERING SEARCH BOX ----------
+// Instead of one big dropdown, we show only the names that match
+// what's currently typed — recalculated on every keystroke.
+const MAX_SUGGESTIONS = 8; // don't dump the whole roster on screen at once
+
+function renderSuggestions(query) {
+  const box = document.getElementById("suggestions");
+  const trimmed = query.trim().toLowerCase();
+
+  if (!trimmed) {
+    box.innerHTML = "";
+    box.classList.remove("visible");
+    return;
+  }
+
+  // Simple "contains" match, so typing part of a last name works too.
+  const matches = players
+    .map((p) => p.name)
+    .filter((name) => name.toLowerCase().includes(trimmed))
+    .slice(0, MAX_SUGGESTIONS);
+
+  if (matches.length === 0) {
+    box.innerHTML = "";
+    box.classList.remove("visible");
+    return;
+  }
+
+  box.innerHTML = matches
+    .map((name) => `<div class="suggestion-item">${name}</div>`)
+    .join("");
+  box.classList.add("visible");
+}
+
+function hideSuggestions() {
+  const box = document.getElementById("suggestions");
+  box.innerHTML = "";
+  box.classList.remove("visible");
+}
+
+// Wire up typing, clicking a suggestion, and clicking away to close it.
+document.getElementById("guessInput").addEventListener("input", (e) => {
+  renderSuggestions(e.target.value);
+});
+
+document.getElementById("suggestions").addEventListener("click", (e) => {
+  if (!e.target.classList.contains("suggestion-item")) return;
+  document.getElementById("guessInput").value = e.target.textContent;
+  hideSuggestions();
+});
+
+document.addEventListener("click", (e) => {
+  const wrapper = document.querySelector(".autocomplete-wrapper");
+  if (!wrapper.contains(e.target)) hideSuggestions();
+});
+
+// ---------- 4. PICK A RANDOM PLAYER AND SHOW THEIR STATS ----------
 function newRound() {
   // Pick a random index from the players array
   const index = Math.floor(Math.random() * players.length);
@@ -84,18 +139,20 @@ function newRound() {
     </div>
   `;
 
-  // Reset the input box and result message for the new round
+  // Reset the search box, suggestions, and result message for the new round
   document.getElementById("guessInput").value = "";
+  hideSuggestions();
   document.getElementById("result").innerHTML = "";
   document.getElementById("guessInput").focus();
 }
 
-// ---------- 4. CHECK THE GUESS ----------
+// ---------- 5. CHECK THE GUESS ----------
 function checkGuess() {
   const guess = document.getElementById("guessInput").value.trim().toLowerCase();
   const answer = currentPlayer.name.toLowerCase();
   const resultDiv = document.getElementById("result");
 
+  hideSuggestions();
   totalCount++;
 
   if (guess === answer) {
@@ -111,13 +168,13 @@ function checkGuess() {
   setTimeout(newRound, 1500);
 }
 
-// ---------- 5. WIRE UP THE BUTTON AND ENTER KEY ----------
+// ---------- 6. WIRE UP THE BUTTON AND ENTER KEY ----------
 document.getElementById("submitBtn").addEventListener("click", checkGuess);
 document.getElementById("guessInput").addEventListener("keydown", function(e) {
   if (e.key === "Enter") checkGuess();
 });
 
-// ---------- 6. LOAD THE DATA, THEN START THE FIRST ROUND ----------
+// ---------- 7. LOAD THE DATA, THEN START THE FIRST ROUND ----------
 // We can't call newRound() until players.json has actually loaded,
 // so we wait for the fetch to finish first.
 fetch("players.json")

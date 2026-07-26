@@ -15,7 +15,10 @@
   <!-- This is where the stat lines get filled in by JavaScript -->
   <div id="stats"></div>
 
-  <input type="text" id="guessInput" placeholder="Type a player name...">
+  <div class="autocomplete-wrapper">
+    <input type="text" id="guessInput" placeholder="Type a player name..." autocomplete="off">
+    <div id="suggestions"></div>
+  </div>
   <button id="submitBtn">Guess</button>
 
   <div id="result"></div>
