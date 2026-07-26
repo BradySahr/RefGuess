@@ -23,6 +23,7 @@ function newRound() {
     <tr>
       <td>${s.year}</td>
       <td>${s.team}</td>
+      <td>${s.primaryPosition || ""}</td>
       <td>${s.g}</td>
       <td>${s.ab}</td>
       <td>${s.r}</td>
@@ -49,6 +50,7 @@ function newRound() {
   const totalsRow = `
     <tr class="totals-row">
       <td colspan="2">Career</td>
+      <td>${c.primaryPosition || ""}</td>
       <td>${c.g}</td>
       <td>${c.ab}</td>
       <td>${c.r}</td>
@@ -72,7 +74,7 @@ function newRound() {
       <table>
         <thead>
           <tr>
-            <th>Year</th><th>Team</th><th>G</th><th>AB</th><th>R</th><th>H</th>
+            <th>Year</th><th>Team</th><th>Pos</th><th>G</th><th>AB</th><th>R</th><th>H</th>
             <th>2B</th><th>3B</th><th>HR</th><th>RBI</th><th>SB</th><th>BB</th><th>SO</th>
             <th>AVG</th><th>OBP</th><th>SLG</th><th>OPS</th>
           </tr>
