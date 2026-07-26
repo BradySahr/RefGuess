@@ -10,11 +10,12 @@
 //        https://github.com/chadwickbureau/baseballdatabank
 //      (click "Code" -> "Download ZIP", then unzip it)
 //   2. Inside the unzipped folder there's a "core" folder containing
-//      lots of CSV files. Copy just these three into THIS project
+//      lots of CSV files. Copy just these four into THIS project
 //      folder (the same folder as this script):
 //        People.csv
 //        Teams.csv
 //        Batting.csv
+//        Fielding.csv
 //
 // THEN RUN:
 //   node build-players.js
@@ -63,6 +64,17 @@ function readCSV(filename) {
   });
 }
 
+// Turn a { POS: gamesAtPos } tally into the two shapes we store:
+// a "primary" position (most games) and a full breakdown sorted by
+// games played, most-used position first.
+function summarizePositions(gamesByPos) {
+  const positions = Object.entries(gamesByPos)
+    .map(([pos, g]) => ({ pos, g }))
+    .sort((a, b) => b.g - a.g);
+  const primaryPosition = positions.length > 0 ? positions[0].pos : null;
+  return { primaryPosition, positions };
+}
+
 function main() {
   console.log("Reading People.csv...");
   const people = readCSV("People.csv");
@@ -72,6 +84,9 @@ function main() {
 
   console.log("Reading Batting.csv...");
   const batting = readCSV("Batting.csv");
+
+  console.log("Reading Fielding.csv...");
+  const fielding = readCSV("Fielding.csv");
 
   // Look up a player's full name by their playerID
   const nameByID = {};
@@ -84,6 +99,24 @@ function main() {
   const teamNameByYearAndID = {};
   for (const team of teams) {
     teamNameByYearAndID[`${team.yearID}_${team.teamID}`] = team.name;
+  }
+
+  // ---------- Tally fielding games by player + season + position ----------
+  // A player can appear multiple times in one season (different stints,
+  // different teams, even multiple positions in the same stint), so we
+  // sum games played at each position rather than just reading one row.
+  // Key is "playerID_year", value is { POS: totalGamesAtThatPosition }.
+  const fieldingGamesByPlayerYear = {};
+  for (const row of fielding) {
+    const id = row.playerID;
+    const year = parseInt(row.yearID, 10);
+    const pos = row.POS;
+    const g = parseInt(row.G, 10) || 0;
+    if (!pos || g === 0) continue;
+
+    const key = `${id}_${year}`;
+    if (!fieldingGamesByPlayerYear[key]) fieldingGamesByPlayerYear[key] = {};
+    fieldingGamesByPlayerYear[key][pos] = (fieldingGamesByPlayerYear[key][pos] || 0) + g;
   }
 
   // The Lahman database is only updated periodically, so instead of
@@ -136,6 +169,10 @@ function main() {
     const slg = Math.round(rawSlg * 1000) / 1000;
     const ops = Math.round((rawObp + rawSlg) * 1000) / 1000;
 
+    // Positions played that season, straight from the fielding tally above.
+    const gamesByPos = fieldingGamesByPlayerYear[`${id}_${year}`] || {};
+    const { primaryPosition, positions } = summarizePositions(gamesByPos);
+
     if (!seasonsByID[id]) seasonsByID[id] = [];
     seasonsByID[id].push({
       year,
@@ -155,12 +192,18 @@ function main() {
       obp,
       slg,
       ops,
+      primaryPosition,
+      positions,
       // Not shown as their own columns, but needed to compute an
       // accurate career OBP/SLG/OPS later (can't just average the
       // per-season rates — has to be recalculated from raw totals).
       hbp,
       sf: sacFlies,
       tb: totalBases,
+      // Raw games-by-position tally for this season, kept around so
+      // the career totals below can be summed from source data rather
+      // than re-parsing Fielding.csv a second time.
+      _gamesByPos: gamesByPos,
     });
   }
 
@@ -201,6 +244,19 @@ function main() {
     const careerSF = sum("sf");
     const careerTB = sum("tb");
 
+    // Sum games-by-position across every season kept for this player,
+    // so the career primary position/breakdown reflects their whole
+    // career (not just whatever a single season happened to show).
+    const careerGamesByPos = {};
+    for (const season of seasons) {
+      for (const [pos, g] of Object.entries(season._gamesByPos)) {
+        careerGamesByPos[pos] = (careerGamesByPos[pos] || 0) + g;
+      }
+      delete season._gamesByPos; // internal-only, don't ship it in players.json
+    }
+    const { primaryPosition: careerPrimaryPosition, positions: careerPositions } =
+      summarizePositions(careerGamesByPos);
+
     // Same rule as individual seasons: derive OBP/SLG/OPS from the raw
     // career totals, and round only once at the very end, rather than
     // averaging together each season's already-rounded rate stats.
@@ -224,6 +280,8 @@ function main() {
       obp: Math.round(rawObp * 1000) / 1000,
       slg: Math.round(rawSlg * 1000) / 1000,
       ops: Math.round((rawObp + rawSlg) * 1000) / 1000,
+      primaryPosition: careerPrimaryPosition,
+      positions: careerPositions,
     };
 
     players.push({ name, seasons, career });
